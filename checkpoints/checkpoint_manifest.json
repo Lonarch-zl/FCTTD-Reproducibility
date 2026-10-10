@@ -1,1 +1,10 @@
-
+{
+  "vgg16_cifar10_fcttd_r400_seed43.pt": {
+    "bytes": 126260285,
+    "sha256": "3f1fdd35ff0402f154634c796623e5a63a85dacea95abfe8bc9376c3e38cf8df"
+  },
+  "vgg16_cifar10_dense_best.pt": {
+    "bytes": 537216409,
+    "sha256": "396ff32967df9d61af18dd2398e35359ee78d33165694e4e2befded8d499433d"
+  }
+}
