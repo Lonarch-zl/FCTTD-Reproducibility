@@ -1,0 +1,15 @@
+name: fcttd-vgg16-cifar10
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - torch==2.9.1
+      - torchvision==0.24.1
+      - tensorly==0.9.0
+      - numpy>=2.0,<3
+      - Pillow>=10
+      - tqdm>=4.66
