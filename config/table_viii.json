@@ -1,1 +1,10 @@
-
+{
+  "dataset": "CIFAR-10",
+  "model": "torchvision VGG-16 (no batch normalization)",
+  "tensorization": {"out_shape": [16, 16, 16], "in_shape": [16, 32, 49]},
+  "tucker_ranks": [8, 8, 8, 8, 8, 8],
+  "kruskal_ranks": [32, 64, 90, 160, 400],
+  "seeds": [42, 43, 44],
+  "weight_only_dense_parameters": 102760448,
+  "notes": "Bias is excluded from the published FC1 compression ratio. This file is the exact release configuration; training is deterministic conditional on the installed CUDA/cuDNN stack."
+}
