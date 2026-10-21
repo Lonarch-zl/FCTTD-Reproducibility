@@ -56,9 +56,6 @@ python evaluate.py --checkpoint checkpoints/vgg16_cifar10_fcttd_new.pt --fcttd
 `decompose_fc1.py` performs HOSVD/Tucker initialization followed by CP-ALS on the Tucker core. Increase `--tucker-iters` or `--cp-iters` for a more accurate but slower decomposition.
 
 ## Fine-tuning and Table VIII
-
-The full training script supports dense and compressed FC1 runs. A dry run prints all 15 commands (five ranks × three seeds):
-
 ```bash
 python run_table_viii.py
 python run_table_viii.py --execute --data-root ./data --output-root ./runs/table_viii
