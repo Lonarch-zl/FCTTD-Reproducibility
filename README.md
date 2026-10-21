@@ -1,6 +1,6 @@
 # FCTTD VGG-16 / CIFAR-10 reproducibility release
 
-This repository contains the runnable compression, fine-tuning, and evaluation pipeline for the VGG-16/CIFAR-10 FC1 experiments. It is intended to accompany the reviewer response and to make the Table VIII rank sweep independently auditable.
+This repository contains the runnable compression, fine-tuning, and evaluation pipeline for the VGG-16/CIFAR-10 FC1 experiments. 
 
 ## What is included
 
