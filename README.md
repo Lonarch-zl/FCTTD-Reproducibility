@@ -33,12 +33,6 @@ conda activate fcttd-vgg16-cifar10
 
 PyTorch CUDA wheels should be selected according to the target GPU. The listed versions are the versions used to create the released checkpoints.
 
-## Checkpoints
-
-`checkpoints/vgg16_cifar10_dense_best.pt` is the clean dense VGG-16 checkpoint (94.22% test Top-1 under the clean reference protocol). `checkpoints/vgg16_cifar10_fcttd_r400_seed43.pt` replaces only `classifier.0` by FCTTD (`R_t=(8,8,8,8,8,8)`, `R_k=400`) and reports 90.68% in the matched-control FC1-only fine-tuning protocol. SHA256 values are in `checkpoints/checkpoint_manifest.json`.
-
-The compressed checkpoint is deliberately accompanied by its protocol metadata. It is not claimed to reproduce every historical number in the manuscript: the release uses one fixed tensorization, split, preprocessing, and seed protocol. This prevents the old HF-feature validation reuse issue and makes future reruns comparable.
-
 ## Evaluate the released checkpoints
 
 ```bash
