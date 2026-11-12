@@ -30,7 +30,7 @@ python -m pip install -r requirements.txt
 python prepare_data.py
 python evaluate.py --checkpoint checkpoints/vgg16_cifar10_fcttd_rt8_rk400.pt --batch-size 128
 ```
-
+Earlier auxiliary FC1-only experiments used cached backbone features for validation. The manuscript evaluation uses the complete network directly and does not rely on these cached features.
 Evaluation uses the complete model in FP32 without test-time augmentation or cached intermediate features. The standard torchvision CIFAR-10 dataset can also be used if the mirror prepared by `prepare_data.py` is unavailable.
 
 **Checkpoint SHA256:** `28502da1c95833bdd89accdc210747ad5b230a65147f6350635785f19ac2efb2`
