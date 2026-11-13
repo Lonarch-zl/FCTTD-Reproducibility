@@ -35,14 +35,6 @@ Evaluation uses the complete model in FP32 without test-time augmentation or cac
 
 **Checkpoint SHA256:** `28502da1c95833bdd89accdc210747ad5b230a65147f6350635785f19ac2efb2`
 
-## End-to-end fine-tuning
-
-```bash
-python train.py --checkpoint checkpoints/vgg16_cifar10_dense_best.pt --decompose-fc1 --amp --output-dir runs/r400
-```
-
-The training script updates the entire network using cross-entropy loss. Its default settings are 20 epochs, batch size 128, AdamW (backbone LR `1e-5`, classifier LR `3e-5`, weight decay `5e-4`), cosine scheduling (minimum LR `1e-7`), seed 43, and gradient clipping at 5. Checkpoints are selected by validation Top-1 accuracy (validation loss breaks ties); the test set is not used for model selection.
-
 ## Tests
 
 ```bash
